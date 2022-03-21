@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testTamagochiMVVM.View.TaskPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding Name}" x:Name="name"/>
+            <Entry Text="{Binding Description}" x:Name="description"/>
+            <Entry Text="{Binding Reward}" x:Name="reward"/>
+
+            <Button Command="{Binding ListViewModel.SaveTaskCommand}"
+                    CommandParameter="{Binding}"
+                    Text="Save"/>
+            <Button Command="{Binding ListViewModel.BackCommand}"
+                    CommandParameter="{Binding}"
+                    Text="Cancel"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
