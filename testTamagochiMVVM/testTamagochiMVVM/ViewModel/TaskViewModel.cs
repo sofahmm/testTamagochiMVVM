@@ -13,7 +13,7 @@ namespace testTamagochiMVVM.ViewModel
 
         public Task Task { get; private set; }
 
-        public TaskViewModel() => Task = new Task();
+        public TaskViewModel() { Task = new Task(); }
         public TaskListViewModel ListViewModel
         {
             get { return taskLVM; }

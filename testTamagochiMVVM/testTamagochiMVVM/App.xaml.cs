@@ -1,4 +1,5 @@
 ﻿using System;
+using testTamagochiMVVM.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace testTamagochiMVVM
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new View.TaskListPage());
+            MainPage = new NavigationPage(new TaskListPage());
         }
 
         protected override void OnStart()

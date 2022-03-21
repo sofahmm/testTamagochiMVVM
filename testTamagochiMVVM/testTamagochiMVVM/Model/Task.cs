@@ -4,7 +4,7 @@ using System.Text;
 
 namespace testTamagochiMVVM.Model
 {
-    class Task
+    public class Task
     {
         public int ID { get; set; }
         public string Name { get; set; }
